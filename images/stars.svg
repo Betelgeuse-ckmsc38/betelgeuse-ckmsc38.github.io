@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="116mm"
+   height="116mm"
+   viewBox="0 0 116 116"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   sodipodi:docname="stars.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#999999"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:snap-nodes="false"
+     inkscape:zoom="0.98268795"
+     inkscape:cx="154.16898"
+     inkscape:cy="275.77422"
+     inkscape:window-width="1920"
+     inkscape:window-height="992"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer2" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Chasing through city night"
+     style="display:inline;opacity:1"
+     sodipodi:insensitive="true"
+     transform="translate(-53.31041,-55.195122)">
+    <circle
+       style="opacity:1;fill:#280b0b;stroke-width:30.2341;paint-order:markers fill stroke"
+       id="path854"
+       cx="111.31041"
+       cy="113.19512"
+       r="58" />
+    <path
+       id="rect885"
+       style="opacity:1;fill:#fcd407;fill-opacity:1;stroke-width:113.386;paint-order:markers fill stroke"
+       d="m 447.92773,297.90039 v 104.33594 h 110.45313 v -1.79297 L 475.99219,375.25195 448.5957,297.90039 Z"
+       transform="scale(0.26458333)" />
+    <path
+       id="rect885-8"
+       style="fill:#fcd407;fill-opacity:1;stroke-width:30;paint-order:markers fill stroke"
+       d="m 118.6572,146.88162 v -27.60555 h 29.22406 v 0.47439 l -21.79867,6.66522 -7.24865,20.46594 z" />
+    <path
+       id="rect885-8-1"
+       style="fill:#fcd407;fill-opacity:1;stroke-width:30;paint-order:markers fill stroke"
+       d="M 105.04472,147.54797 V 119.94242 H 75.820658 v 0.47439 l 21.79867,6.66522 7.248652,20.46594 z" />
+    <path
+       id="rect885-8-1-7"
+       style="fill:#fcd407;fill-opacity:1;stroke-width:30;paint-order:markers fill stroke"
+       d="M 104.56877,79.104922 V 106.71047 H 75.3447 v -0.47439 l 21.798667,-6.665218 7.248653,-20.46594 z" />
+    <rect
+       style="opacity:1;fill:#f1f13d;fill-opacity:1;stroke-width:29.3476;paint-order:markers fill stroke"
+       id="rect6049"
+       width="1.7134581"
+       height="37.398674"
+       x="110.69675"
+       y="59.661781"
+       ry="0.7474786" />
+    <rect
+       style="fill:#f1f13d;fill-opacity:1;stroke-width:29.3476;paint-order:markers fill stroke"
+       id="rect6049-0"
+       width="1.7134581"
+       height="37.398674"
+       x="110.80385"
+       y="129.41989"
+       ry="0.7474786" />
+    <rect
+       style="fill:#f1f13d;fill-opacity:1;stroke-width:29.3476;paint-order:markers fill stroke"
+       id="rect6049-0-0"
+       width="1.7134581"
+       height="37.398674"
+       x="111.47021"
+       y="-166.62819"
+       ry="0.7474786"
+       transform="rotate(90)" />
+    <rect
+       style="fill:#f1f13d;fill-opacity:1;stroke-width:29.3476;paint-order:markers fill stroke"
+       id="rect6049-0-0-9"
+       width="1.7134581"
+       height="37.398674"
+       x="113.08847"
+       y="-93.996452"
+       ry="0.7474786"
+       transform="rotate(90)" />
+    <path
+       id="path14749"
+       style="opacity:0.536977;fill:#d45500;stroke-width:113.386;paint-order:markers fill stroke"
+       inkscape:transform-center-x="5.548984e-06"
+       inkscape:transform-center-y="-3.7013092e-06"
+       transform="matrix(0.42978222,0,0,0.44190106,-68.684664,-70.298641)"
+       d="m 445.51373,414.29733 c 0,-0.63384 -14.7799,5.10286 -18.32543,8.31039 -3.54553,3.20753 -8.69113,18.07233 -8.05729,18.07233 0.63385,0 -4.51175,-14.63632 -7.97897,-18.07233 -3.46722,-3.43601 -18.40374,-8.94423 -18.40374,-8.31039 0,0.63385 14.23174,-3.80813 18.0905,-7.24413 3.85876,-3.436 8.92606,-19.13858 8.29221,-19.13858 -0.63384,0 5.05991,15.8549 8.05729,19.06242 2.99738,3.20751 18.32543,7.95414 18.32543,7.32029 z"
+       sodipodi:nodetypes="szszszszs" />
+  </g>
+</svg>
