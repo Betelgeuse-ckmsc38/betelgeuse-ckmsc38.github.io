@@ -21,7 +21,7 @@ function draw() {
 function windowResized() {
     LENGTH = document.getElementById('standard').offsetWidth;
     resizeCanvas(LENGTH, LENGTH);
-    background(color(red));
+    background(color(black));
     logo();
 }
 
@@ -30,7 +30,7 @@ function logo() {
     const BIGPOINT = 10;
     let prevangle = 0;
     let cluster = 0;
-    background(color('#000021'));
+    background(color('#000'));
     //stars in background
     for(let i = 0; i < BIGPOINT; i += 1){
        strokeWeight(10);

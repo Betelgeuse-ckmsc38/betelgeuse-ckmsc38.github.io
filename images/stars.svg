@@ -25,7 +25,7 @@
      showgrid="false"
      inkscape:snap-nodes="false"
      inkscape:zoom="0.98268795"
-     inkscape:cx="154.16898"
+     inkscape:cx="-46.301575"
      inkscape:cy="275.77422"
      inkscape:window-width="1920"
      inkscape:window-height="992"
@@ -40,10 +40,9 @@
      id="layer2"
      inkscape:label="Chasing through city night"
      style="display:inline;opacity:1"
-     sodipodi:insensitive="true"
      transform="translate(-53.31041,-55.195122)">
     <circle
-       style="opacity:1;fill:#280b0b;stroke-width:30.2341;paint-order:markers fill stroke"
+       style="opacity:1;fill:#000000;stroke-width:30.2341;paint-order:markers fill stroke;fill-opacity:1"
        id="path854"
        cx="111.31041"
        cy="113.19512"
