@@ -5,194 +5,212 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-	<head>
-		<title>科目介紹</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="../assets/css/main.css" />
-		<link rel="icon" type="image/png" sizes="192x192" href="../images/favicon.png" />
-		<noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
-		<style>
-			#selector {
-				position: relative;
-				width: 100%;
-				height: calc(9.75rem + 50px);
-				margin: 0;
-				display: grid;
-				grid-template-columns: repeat(2, 1fr);
-				grid-template-rows: repeat(3, 1fr) 50px;
-			}
 
-			.selection {
-				background-color: white;
-				display: flex;
-				flex-direction: column;
-				align-items: center;
-			}
+<head>
+  <title>科目介紹</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <link rel="stylesheet" href="../assets/css/main.css" />
+  <link rel="icon" type="image/png" sizes="192x192" href="../images/favicon.png" />
+  <noscript>
+    <link rel="stylesheet" href="../assets/css/noscript.css" />
+  </noscript>
+  <style>
+    #selector {
+      position: relative;
+      width: 100%;
+      height: calc(9.75rem + 50px);
+      margin: 0;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3, 1fr) 50px;
+    }
 
-			/*button.selection:focus {
+    .selection {
+      background-color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    /*button.selection:focus {
 				background-color: rgb(36, 11, 59);
 				color: white !important; 
 			}*/
 
-			.post{
-				display: none;
-			}
-		</style>
-	</head>
-	<body class="is-preload">
+    .post {
+      display: none;
+    }
+  </style>
+</head>
 
-		<!-- Wrapper -->
-			<div id="wrapper" class="fade-in">
+<body class="is-preload">
 
-				<!-- Header -->
-					<header id="header">
-						<a href="../" class="logo">回到主頁</a>
-					</header>
+  <!-- Wrapper -->
+  <div id="wrapper" class="fade-in">
 
-				<!-- Nav -->
-					<nav id="nav">
-						<ul class="links">
-							<li><a href="../">關於我們</a></li>
-							<li class="active"><a href="">科目介紹</a></li>
-                            <li><a href="../works">專題作品</a></li>
-							<!-- <li><a href="../elements.html">Elements Reference</a></li> -->
-						</ul>
-						<ul class="icons">
-							<li><a href="https://www.youtube.com/channel/UCUQs1yzPr8Pwdm2g3cIvhmw" class="icon brands fa-youtube"><span class="label">Youtube</span></a></li>
-							<li><a href="https://www.facebook.com/%E5%BB%BA%E4%B8%AD%E6%95%B8%E8%B3%87%E7%AC%AC38%E5%B1%86-100988665889232" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-							<li><a href="https://www.instagram.com/betelgeuse_ckmsc38th/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-						</ul>
-					</nav>
+    <!-- Header -->
+    <header id="header">
+      <a href="../" class="logo">回到主頁</a>
+    </header>
 
-				<!-- Main -->
-				<div id="main">
-					<!-- Post -->
-					<div id="selector">
-						<button onclick="showContent(0)" class="selection">數學組</button>
-						<button onclick="showContent(1)" class="selection">生物組</button>
-						<button onclick="showContent(2)" class="selection">化學組</button>
-						<button onclick="showContent(3)" class="selection">物理組</button>
-						<button onclick="showContent(4)" class="selection">資訊組</button>
-						<button onclick="showContent(5)" class="selection">地科組</button>
-					</div>
-					<section class="post">
-						<header class="major">
-							<span class="date">
-								<i class="fa fa-infinity fa-spin fa-4x"></i>	
-							</span>
-							<h1>數學組</h1>
-							<p>Aenean ornare velit lacus varius enim ullamcorper proin aliquam facilisis ante sed etiam magna interdum congue. Lorem ipsum dolor amet nullam sed etiam veroeros.</p>
-						</header>
-						<div class="image main"><img src="../images/M.png" alt="" /></div>
-					</section>
-					<section class="post">
-						<header class="major">
-							<span class="date">
-								<i class="fa fa-dna fa-spin fa-4x"></i>
-							</span>
-							<h1>生物組</h1>
-							<p>Aenean ornare velit lacus varius enim ullamcorper proin aliquam facilisis ante sed etiam magna interdum congue. Lorem ipsum dolor amet nullam sed etiam veroeros.</p>
-						</header>
-						<div class="image main"><img src="../images/pic01.jpg" alt="" /></div>
-					</section>
-					<section class="post">
-						<header class="major">
-							<span class="date">
-								<i class="fa fa-flask fa-spin fa-4x"></i>
-							</span>
-							<h1>化學組</h1>
-							<p>Aenean ornare velit lacus varius enim ullamcorper proin aliquam facilisis ante sed etiam magna interdum congue. Lorem ipsum dolor amet nullam sed etiam veroeros.</p>
-						</header>
-						<div class="image main"><img src="images/pic01.jpg" alt="" /></div>
-					</section>
-					<section class="post">
-						<header class="major">
-							<span class="date">
-								<i class="fa fa-magnet fa-spin fa-4x"></i>
-							</span>
-							<h1>物理組</h1>
-							<p>Aenean ornare velit lacus varius enim ullamcorper proin aliquam facilisis ante sed etiam magna interdum congue. Lorem ipsum dolor amet nullam sed etiam veroeros.</p>
-						</header>
-						<div class="image main"><img src="images/pic01.jpg" alt="" /></div>
-					</section>
-					<section class="post">
-						<header class="major">
-							<span class="date">
-								<span class="fa-stack fa-lg fa-spin fa-2x">
-									<i class="fa fa-square fa-stack-2x"></i>
-									<i class="fa fa-terminal fa-stack-1x fa-inverse"></i>
-								</span>
-							</span>
-							<h1>資訊組</h1>
-							<p>Aenean ornare velit lacus varius enim ullamcorper proin aliquam facilisis ante sed etiam magna interdum congue. Lorem ipsum dolor amet nullam sed etiam veroeros.</p>
-						</header>
-						<div class="image main"><img src="images/pic01.jpg" alt="" /></div>
-					</section>
-					<section class="post"> 
-						<header class="major">
-							<span class="date">
-								<i class="fa fa-globe-americas fa-spin fa-4x"></i>
-							</span>
-							<h1>地科組</h1>
-							<p>Aenean ornare velit lacus varius enim ullamcorper proin aliquam facilisis ante sed etiam magna interdum congue. Lorem ipsum dolor amet nullam sed etiam veroeros.</p>
-						</header>
-						<div class="image main"><img src="images/pic01.jpg" alt="" /></div>
-					</section>
-					<div style="width: 0.01px; height: 50px; display: block">
-					</div>
-				</div>
-				<!-- Footer -->
-					<footer id="footer">
-						<section class="split contact">
-							<section>
-								<h3>社群媒體</h3>
-								<ul class="icons alt">
-									<li><a href="#" class="icon brands alt fa-youtube"><span class="label">Youtube</span></a></li>
-									<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
-									<li><a href="https://www.instagram.com/betelgeuse_ckmsc38th/" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
-								</ul>
-							</section>
-						</section>
-					</footer>
+    <!-- Nav -->
+    <nav id="nav">
+      <ul class="links">
+        <li><a href="../">關於我們</a></li>
+        <li class="active"><a href="">科目介紹</a></li>
+        <li><a href="../works">專題作品</a></li>
+        <!-- <li><a href="../elements.html">Elements Reference</a></li> -->
+      </ul>
+      <ul class="icons">
+        <li><a href="https://www.youtube.com/channel/UCUQs1yzPr8Pwdm2g3cIvhmw" class="icon brands fa-youtube"><span
+              class="label">Youtube</span></a></li>
+        <li><a href="https://www.facebook.com/%E5%BB%BA%E4%B8%AD%E6%95%B8%E8%B3%87%E7%AC%AC38%E5%B1%86-100988665889232"
+            class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+        <li><a href="https://www.instagram.com/betelgeuse_ckmsc38th/" class="icon brands fa-instagram"><span
+              class="label">Instagram</span></a></li>
+      </ul>
+    </nav>
 
-				<!-- Copyright -->
-					<div id="copyright">
-						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
-					</div>
+    <!-- Main -->
+    <div id="main">
+      <!-- Post -->
+      <div id="selector">
+        <button onclick="showContent(0)" class="selection">數學組</button>
+        <button onclick="showContent(1)" class="selection">生物組</button>
+        <button onclick="showContent(2)" class="selection">化學組</button>
+        <button onclick="showContent(3)" class="selection">物理組</button>
+        <button onclick="showContent(4)" class="selection">資訊組</button>
+        <button onclick="showContent(5)" class="selection">地科組</button>
+      </div>
+      <section class="post">
+        <header class="major">
+          <span class="date">
+            <i class="fa fa-infinity fa-spin fa-4x"></i>
+          </span>
+          <h1>數學組</h1>
+          <p>Aenean ornare velit lacus varius enim ullamcorper proin aliquam facilisis ante sed etiam magna interdum
+            congue. Lorem ipsum dolor amet nullam sed etiam veroeros.</p>
+        </header>
+        <div class="image main"><img src="../images/M.png" alt="" /></div>
+      </section>
+      <section class="post">
+        <header class="major">
+          <span class="date">
+            <i class="fa fa-dna fa-spin fa-4x"></i>
+          </span>
+          <h1>生物組</h1>
+          <p>Aenean ornare velit lacus varius enim ullamcorper proin aliquam facilisis ante sed etiam magna interdum
+            congue. Lorem ipsum dolor amet nullam sed etiam veroeros.</p>
+        </header>
+        <div class="image main"><img src="../images/pic01.jpg" alt="" /></div>
+      </section>
+      <section class="post">
+        <header class="major">
+          <span class="date">
+            <i class="fa fa-flask fa-spin fa-4x"></i>
+          </span>
+          <h1>化學組</h1>
+          <p>Aenean ornare velit lacus varius enim ullamcorper proin aliquam facilisis ante sed etiam magna interdum
+            congue. Lorem ipsum dolor amet nullam sed etiam veroeros.</p>
+        </header>
+        <div class="image main"><img src="images/pic01.jpg" alt="" /></div>
+      </section>
+      <section class="post">
+        <header class="major">
+          <span class="date">
+            <i class="fa fa-magnet fa-spin fa-4x"></i>
+          </span>
+          <h1>物理組</h1>
+          <p>Aenean ornare velit lacus varius enim ullamcorper proin aliquam facilisis ante sed etiam magna interdum
+            congue. Lorem ipsum dolor amet nullam sed etiam veroeros.</p>
+        </header>
+        <div class="image main"><img src="images/pic01.jpg" alt="" /></div>
+      </section>
+      <section class="post">
+        <header class="major">
+          <span class="date">
+            <span class="fa-stack fa-lg fa-spin fa-2x">
+              <i class="fa fa-square fa-stack-2x"></i>
+              <i class="fa fa-terminal fa-stack-1x fa-inverse"></i>
+            </span>
+          </span>
+          <h1>資訊組</h1>
+          <p>Aenean ornare velit lacus varius enim ullamcorper proin aliquam facilisis ante sed etiam magna interdum
+            congue. Lorem ipsum dolor amet nullam sed etiam veroeros.</p>
+        </header>
+        <div class="image main"><img src="images/pic01.jpg" alt="" /></div>
+      </section>
+      <section class="post">
+        <header class="major">
+          <span class="date">
+            <i class="fa fa-globe-americas fa-spin fa-4x"></i>
+          </span>
+          <h1>地科組</h1>
+          <p>Aenean ornare velit lacus varius enim ullamcorper proin aliquam facilisis ante sed etiam magna interdum
+            congue. Lorem ipsum dolor amet nullam sed etiam veroeros.</p>
+        </header>
+        <div class="image main"><img src="images/pic01.jpg" alt="" /></div>
+      </section>
+      <div style="width: 0.01px; height: 50px; display: block">
+      </div>
+    </div>
+    <!-- Footer -->
+    <footer id="footer">
+      <section class="split contact">
+        <section>
+          <h3>社群媒體</h3>
+          <ul class="icons alt">
+            <li><a href="#" class="icon brands alt fa-youtube"><span class="label">Youtube</span></a></li>
+            <li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+            <li><a href="https://www.instagram.com/betelgeuse_ckmsc38th/" class="icon brands alt fa-instagram"><span
+                  class="label">Instagram</span></a></li>
+          </ul>
+        </section>
+      </section>
+    </footer>
 
-			</div>
+    <!-- Copyright -->
+    <div id="copyright">
+      <ul>
+        <li>&copy; Untitled</li>
+        <li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+      </ul>
+    </div>
 
-		<!-- Scripts -->
-			<script src="../assets/js/jquery.min.js"></script>
-			<script src="../assets/js/jquery.scrollex.min.js"></script>
-			<script src="../assets/js/jquery.scrolly.min.js"></script>
-			<script src="../assets/js/browser.min.js"></script>
-			<script src="../assets/js/breakpoints.min.js"></script>
-			<script src="../assets/js/util.js"></script>
-			<script src="../assets/js/main.js"></script>
+  </div>
 
-			<script>
-				var post = document.getElementsByClassName('post');
-				var galaxy = "rgb(36, 11, 59)"
-				var btn = document.getElementsByClassName('selection');
-				post[0].style.display = "block";
-				btn[0].style.backgroundColor = galaxy;
-				btn[0].style.setProperty("color", "#fff", "important");
-				function showContent(choice){
-					for(let i = 0; i < post.length; i++){
-						if(choice == i) {
-							post[i].style.display = "block";
-							btn[i].style.backgroundColor = galaxy;
-							btn[i].style.setProperty("color", "#fff", "important");
-						}
-						else { 
-							post[i].style.display = "none";
-							btn[i].style.backgroundColor = "#fff";
-							btn[i].style.setProperty("color", "#000", "important");
-						}
-					}
-				}
-			</script>
-	</body>
+  <!-- Scripts -->
+  <script src="../assets/js/jquery.min.js"></script>
+  <script src="../assets/js/jquery.scrollex.min.js"></script>
+  <script src="../assets/js/jquery.scrolly.min.js"></script>
+  <script src="../assets/js/browser.min.js"></script>
+  <script src="../assets/js/breakpoints.min.js"></script>
+  <script src="../assets/js/util.js"></script>
+  <script src="../assets/js/main.js"></script>
+
+  <script>
+    var post = document.getElementsByClassName('post');
+    var galaxy = "rgb(36, 11, 59)"
+    var btn = document.getElementsByClassName('selection');
+    post[0].style.display = "block";
+    btn[0].style.backgroundColor = galaxy;
+    btn[0].style.setProperty("color", "#fff", "important");
+    function showContent(choice) {
+      for (let i = 0; i < post.length; i++) {
+        if (choice == i) {
+          post[i].style.display = "block";
+          btn[i].style.backgroundColor = galaxy;
+          btn[i].style.setProperty("color", "#fff", "important");
+        }
+        else {
+          post[i].style.display = "none";
+          btn[i].style.backgroundColor = "#fff";
+          btn[i].style.setProperty("color", "#000", "important");
+        }
+      }
+    }
+  </script>
+</body>
+
 </html>
