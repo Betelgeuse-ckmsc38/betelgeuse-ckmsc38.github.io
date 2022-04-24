@@ -21,7 +21,7 @@ function draw() {
 function windowResized() {
     LENGTH = document.getElementById('standard').offsetWidth;
     resizeCanvas(LENGTH, LENGTH);
-    background(color(black));
+    background(color('black'));
     logo();
 }
 
