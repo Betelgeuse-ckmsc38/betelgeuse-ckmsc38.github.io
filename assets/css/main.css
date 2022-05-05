@@ -3065,7 +3065,7 @@ input, select, textarea {
 		}
 
 		table tfoot {
-			border-top: solid 2px;
+			border: 0;
 		}
 
 		table.alt {
@@ -3092,6 +3092,9 @@ input, select, textarea {
 
 			table.alt tfoot {
 				border-top: 0;
+			}
+			table.fin {
+				margin: 0;
 			}
 
 	table tbody tr {
