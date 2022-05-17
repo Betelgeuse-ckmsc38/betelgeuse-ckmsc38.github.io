@@ -26,6 +26,48 @@
     th:first-child, td:first-child {
       width: 28%;
     }
+
+    .ct {
+      text-align: center;
+    }
+
+    .premire {
+      height: 100%;
+      display: grid;
+      grid-template-areas:"_title _title"
+                          "_nowvd _nexvd"
+                          "_table _table";
+      grid-column-gap: 2.5%;
+    }
+
+    .ptable th:first-child,td:first-child {
+      width: 100px;
+    }
+
+    .ptable th:nth-child(2), td:nth-child(2) {
+      width: 200px;
+    }
+    .ptable th, td {
+      font-size: 0.9rem;
+    }
+    @media screen and (max-width: 700px) {
+      .premire {
+      grid-template-areas:"_title"
+                          "_nowvd"
+                          "_nexvd"
+                          "_table";
+      }
+       
+      .ptable th:first-child,td:first-child {
+        width: 20%;
+      }
+
+      .ptable th:nth-child(2), td:nth-child(2) {
+        width: 30%;
+      }
+
+    }
+
   </style>
 
 </head>
@@ -58,6 +100,35 @@
 
     <!-- Main -->
     <div id="main">
+
+      <div class="premire">
+        <h2 style="grid-area:_title" class="ct">首播</h2>
+        <p class="youtubebox" style="grid-area:_nowvd" >
+          <iframe src="https://www.youtube.com/embed/A7wNuQhLwVA" allowfullscreen="true"></iframe>
+        </p>
+        <p class="youtubebox" style="grid-area:_nexvd">
+          <iframe src="https://www.youtube.com/embed/A7wNuQhLwVA" allowfullscreen="true"></iframe>
+        </p>
+        <table style="grid-area:_table" class="ptable">
+          <thead>
+            <th>下輪</th>
+            <th>報告者</th>
+            <th>標題</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td>I0</td>
+              <td>陳瑋能、黃建碩</td>
+              <td>P=NP問題的解答與延伸</td>
+            </tr>
+            <tr>
+              <td>P0</td>
+              <td>楊玠霆、楊祐宇、黃紹凱</thd>
+              <td>妙妙磁單極子的用途與製方</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
 
       <!-- Posts -->
       <div class="content">
