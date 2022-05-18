@@ -78,7 +78,7 @@ setInterval(cockado, 1000);
 function cockado(){
     Now = new Date();
     Now = `${Now.getDate()}${('0' + Now.getHours()).slice(-2)}${('0' + Now.getMinutes()).slice(-2)}`;
-    console.log(`It is now ${Now}`);
+   // console.log(`It is now ${Now}`);
     if(Now != Past){
         change();
     }
