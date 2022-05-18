@@ -69,6 +69,7 @@ const list3 = [ '開幕式', '開幕式',
                 '閉幕式', '閉幕式',]
 
 var tem = document.querySelectorAll('.ptable td');
+var titles = document.querySelectorAll('.ptable th');
 var Now, Past;
 var nextToCome = 0;
 
@@ -78,9 +79,7 @@ function cockado(){
     Now = new Date();
     Now = `${Now.getDate()}${('0' + Now.getHours()).slice(-2)}${('0' + Now.getMinutes()).slice(-2)}`;
     console.log(`It is now ${Now}`);
-
-    if(Now != Past || true){
-        console.log('ft');
+    if(Now != Past){
         change();
     }
     Past = Now;
