@@ -13,7 +13,7 @@ function preload() {
 function setup() {
     cnv = createCanvas(LENGTH, LENGTH).parent(parentId); // 設置父節點 id
     cnv.doubleClicked(musicStart);
-    frameRate(110); 
+    frameRate(82); 
     audio = createAudio('../../song/合唱完整版.wav');
     stroke(color('white'));
     angleMode(DEGREES);
