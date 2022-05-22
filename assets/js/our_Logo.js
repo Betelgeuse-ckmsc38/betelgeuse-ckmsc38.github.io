@@ -2,20 +2,35 @@ const parentId = 'sketch';
 var LENGTH = document.getElementById('standard').offsetWidth;
 const fontSize = 32;
 
+var letsPlay = false;
+var letsStart = true;
+var times = 0;
+
 function preload() {
     img = loadImage("images/stars.svg");
 }
 
 function setup() {
-    createCanvas(LENGTH, LENGTH).parent(parentId); // 設置父節點 id
-    noLoop();
+    cnv = createCanvas(LENGTH, LENGTH).parent(parentId); // 設置父節點 id
+    cnv.doubleClicked(musicStart);
+    frameRate(30);
+    audio = createAudio('../../song/合唱完整版.wav');
     stroke(color('white'));
     angleMode(DEGREES);
+    imageMode(CENTER);
 }
 
 function draw() {
-    translate(LENGTH / 2, LENGTH / 2);
+    if(letsStart){
     logo();
+    letsStart = false;
+    translate(-LENGTH / 2, -LENGTH / 2);
+    }
+    push();
+    translate(LENGTH / 2, LENGTH / 2);
+    if(letsPlay){ rotate( ++times / 4)};
+    image(img, 0, 0, 0.5 * LENGTH, 0.5 * LENGTH);
+    pop();
 }
 
 function windowResized() {
@@ -26,6 +41,7 @@ function windowResized() {
 }
 
 function logo() {
+    translate(LENGTH / 2, LENGTH / 2);
     const LINE = 45;
     const BIGPOINT = 10;
     let prevangle = 0;
@@ -61,6 +77,16 @@ function logo() {
         prevangle = angle;
 
     }
-    imageMode(CENTER);
-    image(img, 0, 0, 0.5 * LENGTH, 0.5 * LENGTH);
+}
+
+function musicStart() {
+    if(letsPlay){
+        audio.stop();
+        letsPlay = false;
+    }
+    else {
+        audio.loop();
+        letsPlay = true;
+        times = 0;
+    }
 }
