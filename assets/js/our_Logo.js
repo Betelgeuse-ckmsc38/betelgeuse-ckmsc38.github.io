@@ -13,7 +13,7 @@ function preload() {
 function setup() {
     cnv = createCanvas(LENGTH, LENGTH).parent(parentId); // 設置父節點 id
     cnv.doubleClicked(musicStart);
-    frameRate(30);
+    frameRate(90);
     audio = createAudio('../../song/合唱完整版.wav');
     stroke(color('white'));
     angleMode(DEGREES);
@@ -28,7 +28,7 @@ function draw() {
     }
     push();
     translate(LENGTH / 2, LENGTH / 2);
-    if(letsPlay){ rotate( ++times / 4)};
+    if(letsPlay){ rotate( ++times  / 2)};
     image(img, 0, 0, 0.5 * LENGTH, 0.5 * LENGTH);
     pop();
 }
