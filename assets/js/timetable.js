@@ -1,50 +1,52 @@
 const Body = document.body;
 
-const time = [251300, 251340, 251400, 251420, 251440, 251500, 251510, 251530, 251550, 251610, 251635, 261300, 261340, 261400, 261420, 261440, 261500, 261510, 261530, 261550, 261635];
-const list = [  ' ', ' ', 
+const time = [251300, 251340, 251400, 251420, 251440, 251500, 251505, 251525, 251545, 251605, 251625, 261300, 261340, 261400, 261420, 261440, 261500, 261505, 261525, 261545, 261610, 261035];
+const list = [  '--', '--', 
                 'B1', 'I1', 
                 'B2', 'I2', 
                 'B3', 'I3', 
                 'B4', 'G1', 
-                ' ', ' ', 
+                '--', '--', 
                 'P1', 'M1', 
                 'P2', 'M2', 
                 'CH1', 'M3', 
                 'CH2', 'CH3', 
-                ' ', ' ',
-                ' ', ' ', 
+                '--', '--',
+                '--', '--', 
                 'B5', 'I4', 
                 'B6', 'I5', 
                 'B7', 'I6', 
                 'B8', 'G2', 
-                ' ', ' ', 
+                '--', '--', 
                 'P3', 'M4', 
                 'P4', 'M5', 
                 'CH4', 'M6', 
-                ' ', ' ',
+                '--', '--',
+                'CK', 'CK'
                 ];
 
-const list2 = [ ' ', ' ',
+const list2 = [ '建中數資', '建中數資',
                 '李奕賢、蔡尚展', '林子安、張維傑、陳瑋能',
                 '江履方', '葉又銘、黃建碩、洪承岳',
                 '張玠、袁廣、王柏涵', '金哲安',
                 '曾翊豪、林哲輝、邱品耀', '黃琮堡',
-                ' ', ' ',
+                '--', '--',
                 '黃紹凱、楊玠霆、楊祐宇', '曹丞豐、蔡承澔',
                 '黃昱翔、陳建宇、李隆佑', '林品齊',
                 '王粲閔、周埕豪', '劉曜瑋、謝宇叡',
                 '柯冠辰、彭首勳', '陳柏翰、陳彥瑋',
-                ' ', ' ',
-                ' ', ' ',
+                '建中數資', '建中數資',
+                '建中數資', '建中數資',
                 '王鴻銘', '林昇甫、莊詔允',
                 '陳皓文、黃冠瑾', '邱鼎傑',
                 '吳承俊、張睿恆', '黃庭躍',
                 '林士軒、楊智翔、黃書寬', '涂宇軒',
-                ' ', ' ',
+                '--', '--',
                 '駱奕、張祐維、張崴智', '張廷岳、黃晨語',
                 '許博堯、陳冠璋、韓家恆', '張竣智',
                 '張嘉元、蔡承恩', '林偉宸、何睿宇',
-                ' ', ' ',];
+                '建中數資', '建中數資',
+                '建中數資', '建中數資', ];
 
 const list3 = [ '開幕式', '開幕式',
                 '學習與記憶相關疾病腦指蛋白的早期偵測與開發', 'A Genetic Algorithm Approach to 3D Maze Generation',
@@ -66,7 +68,8 @@ const list3 = [ '開幕式', '開幕式',
                 '妙妙圈垂直自由落下漂浮時間之探討', '二維平面曲線之內接雙切圓的研究',
                 '可重構式電磁超構表面研究暨無線通訊應用', '畢氏定理變形記',
                 '太陽能轉換熱能之凝膠應用於過濾水之研究', '平面上兩點到二次曲線的最短距離和',
-                '閉幕式', '閉幕式',]
+                '閉幕式', '閉幕式',
+                '感謝您的收看', '感謝您的收看'];
 
 var tem = document.querySelectorAll('.ptable td');
 var titles = document.querySelectorAll('.ptable th');
@@ -75,18 +78,24 @@ var nextToCome = 0;
 
 setInterval(cockado, 1000);
 
+Body.onload = change(1);
+
 function cockado(){
     Now = new Date();
     Now = `${Now.getDate()}${('0' + Now.getHours()).slice(-2)}${('0' + Now.getMinutes()).slice(-2)}`;
    // console.log(`It is now ${Now}`);
     if(Now != Past){
-        change();
+        change(0);
     }
     Past = Now;
 }
 
 
-function change() {
+function change(IST) {
+    if(IST) {
+        Now = new Date();
+        Now = `${Now.getDate()}${('0' + Now.getHours()).slice(-2)}${('0' + Now.getMinutes()).slice(-2)}`;
+    }
     if(Now < 250000 || Now > 262359){
         tem[0].innerHTML = '還剩';
         tem[1].innerHTML = 25 - Math.floor(Now/ 10000);
@@ -96,7 +105,9 @@ function change() {
         tem[5].innerHTML = "一定要來喔&#x1F618";
     };
     if (time[nextToCome] < Now) {
-        nextToCome++;
+        while (time[nextToCome] < Now) {
+            nextToCome++;
+        }
         tem[0].innerHTML = list[nextToCome * 2];
         tem[1].innerHTML = list2[nextToCome * 2];
         tem[2].innerHTML = list3[nextToCome * 2];
