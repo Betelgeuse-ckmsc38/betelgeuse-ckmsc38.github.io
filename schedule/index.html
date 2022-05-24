@@ -19,11 +19,13 @@
   </noscript>
 
   <style>
-    th, td {
+    th,
+    td {
       text-align: center !important;
     }
 
-    th:first-child, td:first-child {
+    th:first-child,
+    td:first-child {
       width: 28%;
     }
 
@@ -34,9 +36,9 @@
     .premire {
       height: 100%;
       display: grid;
-      grid-template-areas:"_title _title"
-                          "_nowvd _nexvd"
-                          "_table _table";
+      grid-template-areas: "_title _title"
+        "_nowvd _nexvd"
+        "_table _table";
       grid-column-gap: 2.5%;
     }
 
@@ -45,33 +47,35 @@
       width: 100px;
     }
 
-    .ptable th:nth-child(2), 
+    .ptable th:nth-child(2),
     .ptable td:nth-child(2) {
       width: 200px;
     }
-    .ptable th, td {
+
+    .ptable th,
+    td {
       font-size: 0.9rem;
     }
+
     @media screen and (max-width: 700px) {
       .premire {
-      grid-template-areas:"_title"
-                          "_nowvd"
-                          "_nexvd"
-                          "_table";
+        grid-template-areas: "_title"
+          "_nowvd"
+          "_nexvd"
+          "_table";
       }
-       
-      .ptable th:first-child, 
+
+      .ptable th:first-child,
       .ptable :first-child {
         width: 20%;
       }
 
-      .ptable th:nth-child(2), 
+      .ptable th:nth-child(2),
       .ptable td:nth-child(2) {
         width: 30%;
       }
 
     }
-
   </style>
 
 </head>
@@ -107,11 +111,11 @@
 
       <div class="premire">
         <h2 style="grid-area:_title" class="ct">首播</h2>
-        <p class="youtubebox" style="grid-area:_nowvd" >
+        <p class="youtubebox" style="grid-area:_nowvd">
           <!--<iframe src="https://www.youtube.com/embed/" allowfullscreen="true"></iframe>-->
         </p>
         <p class="youtubebox" style="grid-area:_nexvd">
-         <!-- <iframe src="https://www.youtube.com/embed/" allowfullscreen="true"></iframe>-->
+          <!-- <iframe src="https://www.youtube.com/embed/" allowfullscreen="true"></iframe>-->
         </p>
         <table style="grid-area:_table" class="ptable">
           <thead>
@@ -346,7 +350,7 @@
             </tr>
             <tr>
               <td>B3</td>
-              <td><a href="../works/B/B03">果蠅成蟲腹部解剖系統的建立</a></td>
+              <td><a href="../works/B/B03">利用果蠅成蟲腹部解剖系統探討運動神經功能老化的分子機制</a></td>
             </tr>
             <tr>
               <td>B4</td>
@@ -495,7 +499,8 @@
   <script src="../assets/js/breakpoints.min.js"></script>
   <script src="../assets/js/util.js"></script>
   <script src="../assets/js/main.js"></script>
-  <script src="../assets/js/timetable.js"></script> <!--Our own js-->
+  <script src="../assets/js/timetable.js"></script>
+  <!--Our own js-->
 
 </body>
 
