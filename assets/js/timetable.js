@@ -1,12 +1,13 @@
 const Body = document.body;
 
-const time = [251300, 251340, 251400, 251420, 251440, 251500, 251505, 251525, 251545, 251605, 251625, 261300, 261340, 261400, 261420, 261440, 261500, 261505, 261525, 261545, 261610, 261035];
+const time = [251300, 251328, 251346, 251406, 251421, 251439, 251458, 251515, 251532, 251600, 261300, 261340, 261400, 261420, 261440, 261500, 261505, 261525, 261545, 261610, 261035];
+const timeII = [251300, 251328, 251340, 251355, 251408, 251428, 251444, 251458, 251515, 251600,]
 const list = ['--', '--',
   'B1', 'I1',
   'B2', 'I2',
   'B3', 'I3',
   'B4', 'G1',
-  '--', '--',
+  // '--', '--',
   'P1', 'M1',
   'P2', 'M2',
   'CH1', 'M3',
@@ -30,7 +31,7 @@ const list2 = ['建中數資', '建中數資',
   '江履方', '葉又銘、黃建碩、洪承岳',
   '張玠、袁廣、王柏涵', '金哲安',
   '曾翊豪、林哲輝、邱品耀', '黃琮堡',
-  '--', '--',
+  // '--', '--',
   '黃紹凱、楊玠霆、楊祐宇', '曹丞豐、蔡承澔',
   '黃昱翔、陳建宇、李隆佑', '林品齊',
   '王粲閔、周埕豪', '劉曜瑋、謝宇叡',
@@ -53,7 +54,7 @@ const list3 = ['開幕式', '開幕式',
   'Functional Characterization of Hog1/Ire1-mediated Syt1 phosphorylation upon TM-induced ER stress', '盲人眼鏡',
   '利用果蠅成蟲腹部解剖系統探討運動神經功能老化的分子機制', '智慧冰箱手機應用程式',
   '自噬作用、 尿素循環參與在降血脂藥物誘導之防護作用', '機器學習在音樂生成的應用',
-  '中場休息', '中場休息',
+  //'中場休息', '中場休息',
   'On the Properties of the Magnetic Field and Magnetic Force Produced by Combinations of Round Magnets', '兩動點分點軌跡之探究',
   '影響離子液體電容電容的因素探討', '撿紅點特殊情況的探討',
   '以巨量資料庫分析闡明聽力損失與精神疾病間的關聯', '過橋問題',
@@ -74,7 +75,7 @@ const list3 = ['開幕式', '開幕式',
 var tem = document.querySelectorAll('.ptable td');
 var titles = document.querySelectorAll('.ptable th');
 var Now, Past;
-var nextToCome = 0;
+var nextToCome = 0, ntcII = 0;
 
 setInterval(cockado, 1000);
 
@@ -111,9 +112,17 @@ function change(IST) {
     tem[0].innerHTML = list[nextToCome * 2];
     tem[1].innerHTML = list2[nextToCome * 2];
     tem[2].innerHTML = list3[nextToCome * 2];
-    tem[3].innerHTML = list[nextToCome * 2 + 1];
-    tem[4].innerHTML = list2[nextToCome * 2 + 1];
-    tem[5].innerHTML = list3[nextToCome * 2 + 1];
   }
-
+  if(timeII[ntcII] < Now) {
+    while (timeII[ntcII] < Now) {
+        ntcII++;
+    }
+    tem[3].innerHTML = list[ntcII * 2 + 1];
+    tem[4].innerHTML = list2[ntcII * 2 + 1];
+    tem[5].innerHTML = list3[ntcII * 2 + 1];
+  }
+  if(Now == 251300){
+    let ifr = Body.querySelector(".wait");
+    ifr.setAttribute("src", "https://www.youtube.com/embed/bscCx0Zg2X0");
+  }
 }
