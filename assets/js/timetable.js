@@ -121,7 +121,7 @@ function change(IST) {
     tem[4].innerHTML = list2[ntcII * 2 + 1];
     tem[5].innerHTML = list3[ntcII * 2 + 1];
   }
-  if(Now == 251300){
+  if(Now == 251300 || (Now >= 251300 && IST)){
     let ifr = Body.querySelector(".wait");
     ifr.setAttribute("src", "https://www.youtube.com/embed/bscCx0Zg2X0");
   }
