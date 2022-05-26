@@ -1,7 +1,8 @@
 const Body = document.body;
 
-const time = [251300, 251330, 251348, 251408, 251423, 251441, 251500, 251517, 251534, 251600, 261300, 261340, 261400, 261420, 261440, 261500, 261505, 261525, 261545, 261610, 261035];
-const timeII = [251300, 251330, 251342, 251357, 251410, 251430, 251446, 251500, 251517, 251600,]
+const time = [251300, 251330, 251348, 251408, 251423, 251441, 251500, 251517, 251534, 251600, 261300, 261330, 261344, 261401, 261414, 261428, 261433, 261447, 261459, 261520, Infinity];
+const timeII = [251300, 251330, 251342, 251357, 251410, 251430, 251446, 251500, 251517, 251600,
+261300, 261330, 261343, 261356, 261405, 261423, 261428, 261444, 261459, 261520, Infinity];
 const list = ['CK', 'CK',
   'B1', 'I1',
   'B2', 'I2',
@@ -18,7 +19,7 @@ const list = ['CK', 'CK',
   'B6', 'I5',
   'B7', 'I6',
   'B8', 'G2',
-  // '--', '--',
+  '--', '--',
   'P3', 'M4',
   'P4', 'M5',
   'CH4', 'M6',
@@ -42,7 +43,7 @@ const list2 = ['建中數資', '建中數資',
   '陳皓文、黃冠瑾', '邱鼎傑',
   '吳承俊、張睿恆', '黃庭躍',
   '林士軒、楊智翔、黃書寬', '涂宇軒',
- // '--', '--',
+  '--', '--',
   '駱奕、張祐維、張崴智', '張廷岳、黃晨語',
   '許博堯、陳冠璋、韓家恆', '張竣智',
   '張嘉元、蔡承恩', '林偉宸、何睿宇',
@@ -65,7 +66,7 @@ const list3 = ['開幕式', '開幕式',
   'Elucidation of the Role of GFAT1 in the Growth of Pancreatic Ductal Carcinoma and Development of Novel GFAT1 Inhibitors', '人臉濾鏡生成',
   '對在熱帶火蟻上發現之新型濃核病毒進行的研究與野外調查', '利用機器學習規劃火車路網',
   '探討阿滋海默症中錯誤摺疊蛋白對於神經微膠細胞的影響', '球狀星團與X光的研究',
- // '中場休息', '中場休息',
+  '中場休息', '中場休息',
   '妙妙圈垂直自由落下漂浮時間之探討', '二維平面曲線之內接雙切圓的研究',
   '可重構式電磁超構表面研究暨無線通訊應用', '畢氏定理變形記',
   '太陽能轉換熱能之凝膠應用於過濾水之研究', '平面上兩點到二次曲線的最短距離和',
@@ -97,7 +98,7 @@ function change(IST) {
     Now = new Date();
     Now = `${Now.getDate()}${('0' + Now.getHours()).slice(-2)}${('0' + Now.getMinutes()).slice(-2)}`;
   }
-  if (Now < 250000 || Now > 262359) {
+  if (Now < 250000) {
     tem[0].innerHTML = '還剩';
     tem[1].innerHTML = 25 - Math.floor(Now / 10000);
     tem[2].innerHTML = '天';
@@ -121,11 +122,4 @@ function change(IST) {
     tem[4].innerHTML = list2[ntcII * 2 + 1];
     tem[5].innerHTML = list3[ntcII * 2 + 1];
   }
-  /*if(Now == 251300 || (Now >= 251300 && IST)){
-    //let ifr = Body.querySelector(".wait");
-    //ifr.setAttribute("src", "https://www.youtube.com/embed/bscCx0Zg2X0");
-    let a = Body.querySelector(".w");
-    //a.style.color = 'blue';
-    a.setAttribute("href", "https://youtu.be/bscCx0Zg2X0");
-  }*/
 }
